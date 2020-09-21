@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/../../packages/rabbitmq/include",
+                "${workspaceFolder}/../../packages/boost/include",
+                "${workspaceFolder}/../../packages/poco/include"
+            ],
+            "compilerPath": "/usr/bin",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/../../packages/rabbitmq/include",
+                    "${workspaceFolder}/../../packages/boost/include",
+                    "${workspaceFolder}/../../packages/poco/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

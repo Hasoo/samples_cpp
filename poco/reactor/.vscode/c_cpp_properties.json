@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}",
+                "/home/hasoo/workspace/data/centos7/packages/boost-1.67.0/include",
+                "/home/hasoo/workspace/data/centos7/packages/cryptopp700/include",
+                "/home/hasoo/workspace/data/centos7/packages/otlv4", 
+                "/home/hasoo/workspace/data/centos7/packages/poco-1.9.0/include"
+            ],
+            "compilerPath": "/home/hasoo/workspace/data/centos7/packages/gcc-8.1.0/bin",
+            "cStandard":  "c11",
+            "cppStandard":  "c++17",
+            "browse" : {
+                "path": [
+                    "${workspaceFolder}",
+                    "/home/hasoo/workspace/data/centos7/packages/boost-1.67.0/include",
+                    "/home/hasoo/workspace/data/centos7/packages/cryptopp700/include",
+                    "/home/hasoo/workspace/data/centos7/packages/otlv4", 
+                    "/home/hasoo/workspace/data/centos7/packages/poco-1.9.0/include"
+                ],
+                "limitSymbolsToIncludedHeaders":  true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

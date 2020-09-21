@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<config>
+	<logging>
+		<channels>
+			<c1>
+				<class>ConsoleChannel</class>
+			</c1>
+			<c2>
+				<class>FileChannel</class>
+				<path>./log/test.log</path>
+			</c2>
+			<c3>
+				<class>SplitterChannel</class>
+				<channels>c1,c2</channels>
+				<formatter>
+					<class>PatternFormatter</class>
+					<pattern>%L%H-%M-%S.%i %t</pattern>
+				</formatter>
+			</c3>
+		</channels>
+		<loggers>
+			<root>
+				<name></name>
+				<channel>c1</channel>
+				<level>trace</level>
+			</root>
+			<app>
+				<name>Application</name>
+				<channel>c3</channel>
+				<level>trace</level>
+			</app>
+		</loggers>
+	</logging>
+</config>

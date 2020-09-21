@@ -1,0 +1,34 @@
+{
+  "logging": {
+    "channels": {
+      "c1": {
+        "class": "ConsoleChannel"
+      },
+      "c2": {
+        "class": "FileChannel",
+        "path": "${system.currentDir}/test.log"
+      },
+      "c3": {
+        "class": "SplitterChannel",
+        "channel1": "c1",
+        "channel2": "c2",
+        "formatter": {
+          "class": "PatternFormatter",
+          "pattern": "%L%H:%M:%S.%i [%P][%I] %p %t"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "name":"",
+        "channel":"c1",
+        "level":"trace"
+      },
+      "app": {
+        "name": "Application",
+        "channel": "c3",
+        "level": "trace"
+      }
+    }
+  }
+}
